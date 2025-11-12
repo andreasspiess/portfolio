@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Andreas Spieß</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio von Dein Name – moderne Webentwicklung mit HTML, CSS und JavaScript.">
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="progress"></div>
+
+  <!-- NAV -->
+  <header>
+    <nav class="container nav">
+      <div class="logo">Andreas Spieß</div>
+
+      <button class="nav-toggle" aria-expanded="false">
+        Menu
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#projects">Projekte</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero reveal">
+      <div class="container hero-grid">
+
+        <!-- LEFT -->
+        <div class="hero-left">
+          <p class="eyebrow">Webentwicklung · Frontend</p>
+
+          <h1 class="hero-title">
+            Webseiten, die<br>
+            <span class="hero-emph">schnell</span> laden.<br>
+            <span class="hero-emph">klar</span> wirken.<br>
+            <span class="hero-emph">funktionieren.</span>
+          </h1>
+
+          <p class="hero-sub">
+            Ich baue moderne, performante Web-UIs mit HTML, CSS & JavaScript.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Projekte ansehen</a>
+            <a href="#contact" class="btn btn-ghost">Kontakt</a>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero-photo">
+          <img src="assets/me.jpeg" alt="Portrait von mir" />
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT / FEATURES -->
+    <section id="about" class="feature section reveal">
+      <div class="container feature-grid">
+        <article class="feature-card">
+          <h3>Sauberes Markup</h3>
+          <p>Semantisches HTML, zugänglich, SEO-freundlich, wartbar.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Performance</h3>
+          <p>Responsiv, Core Web Vitals im Blick, schlanke Bundles.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>UX & Struktur</h3>
+          <p>Klare Architektur, konsistente Komponenten, sinnvolle Interaktionen.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Ausgewählte Projekte</h2>
+
+        <div class="grid">
+
+<article class="card project">
+  <img
+    class="project-thumb"
+    src="assets/trainingsplan-thumb.png"
+    alt="Screenshot: Trainingsplan App"
+  />
+
+  <h3>Trainingsplan App</h3>
+
+  <p>
+    Tracke Gewicht, Wiederholungen & Sätze für jede Übung direkt im Browser.
+    Die Daten werden lokal gespeichert – ohne Login, ohne Account.
+  </p>
+
+  <ul class="badges">
+    <li>JavaScript</li>
+    <li>LocalStorage</li>
+    <li>Responsive</li>
+  </ul>
+
+  <div class="project-actions">
+    <a
+      class="btn btn-primary"
+      href="https://andreasspiess.github.io/trainingsplan-app/"
+      target="_blank"
+      rel="noopener"
+      >Live&nbsp;Demo</a
+    >
+  </div>
+</article>
+
+
+<article class="card project">
+  <img
+    class="project-thumb"
+    src="assets/stucco-thumb.png"
+    alt="Screenshot: Arte Veneziano Handwerks-Webseite"
+  />
+
+  <h3>Arte Veneziano – Handwerks-Webseite</h3>
+
+  <p>
+    Moderne Landingpage zur Präsentation exklusiver Spachteltechniken wie
+    Stucco Veneziano. Entwickelt für Handwerksbetriebe zur Darstellung
+    ihrer Leistungen und zur Generierung von Kundenanfragen.
+  </p>
+
+  <ul class="badges">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Responsive</li>
+  </ul>
+
+  <div class="project-actions">
+    <a class="btn btn-primary"
+       href="https://andreasspiess.github.io/arte-veneziano-web-walls/"
+       target="_blank"
+       rel="noopener">
+    Live&nbsp;Demo
+    </a>
+  </div>
+</article>
+
+
+<article class="card project upcoming">
+  <div class="project-thumb placeholder">
+    <span>🚧</span>
+  </div>
+
+  <h3>Neues Projekt</h3>
+
+  <p>
+    Ein spannendes neues Webprojekt ist momentan in Arbeit.
+    Case Study erscheint in Kürze.
+  </p>
+
+  <ul class="badges">
+    <li>in Arbeit</li>
+  </ul>
+</article>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="container contact">
+        <h2 class="section-title">Kontakt</h2>
+        <p>Andreas Spieß</a></p>
+        <p>Mühlgasse 9</a></p>
+        <p>87719 Mindelheim</a></p>
+        <p>Mail: <a href="mailto:dein@mail.de">spiess.andi@web.de</a></p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 – Andreas Spieß</p>
+    
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
