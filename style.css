@@ -350,3 +350,29 @@ footer{
   display:block;
 }
 
+/* === RESPONSIVE FIX: Skills auf Smartphones kompakter === */
+@media (max-width: 600px) {
+  #skills.section {
+    padding: 40px 0 30px;
+  }
+
+  .skills-list {
+    gap: 8px;
+  }
+
+  .skills-list li {
+    font-size: 0.85rem;         /* Schrift kleiner */
+    padding: 6px 10px;          /* weniger Innenabstand */
+    border-radius: 999px;
+  }
+
+  .skills-list img {
+    width: 18px;                /* Icons verkleinern */
+    height: 18px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;          /* Überschrift minimal kleiner */
+  }
+}
+
