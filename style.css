@@ -214,6 +214,8 @@ header{
   display: flex;
   flex-direction: column;
   gap: 12px;
+    justify-content: space-between; /* verteilt Inhalt vertikal */
+  height: 100%; /* sorgt dafür, dass alle gleich hoch sind */
 }
 
 .project-thumb {
@@ -250,7 +252,7 @@ header{
 }
 
 .project-actions {
-  margin-top: 4px;
+  margin-top: auto;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -319,3 +321,30 @@ footer{
   color: var(--muted);
 }
 
+
+
+
+/* Webdesign-Illustration */
+.wd-illu{
+  width: 100%;
+  max-width: 360px;          /* Größe hier anpassen */
+  margin: 0 auto;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.08));
+  animation: wd-float 7s ease-in-out infinite alternate;
+}
+.wd-illu svg{ display:block; width:100%; height:auto }
+
+/* Farben der SVG-Elemente via CSS-Variablen steuern */
+.wd-illu .mint{ fill: var(--accent1); }
+.wd-illu .lime{ fill: var(--accent2); }
+.wd-illu .line-soft{ fill: color-mix(in oklab, var(--ink) 10%, white 90%); }
+
+@keyframes wd-float{
+  from { transform: translateY(0) }
+  to   { transform: translateY(-6px) }
+}
+
+/* Motion-Reduktion respektieren */
+@media (prefers-reduced-motion: reduce){
+  .wd-illu{ animation:none }
+}

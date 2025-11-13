@@ -58,10 +58,96 @@
         </div>
 
         <!-- RIGHT -->
-        <div class="hero-photo">
+ <!--       <div class="hero-photo">
           <img src="assets/me.jpeg" alt="Portrait von mir" />
-        </div>
+        </div> -->
 
+        <!-- Webdesign Illustration (inline SVG) -->
+<div class="wd-illu" aria-hidden="true">
+  <svg viewBox="0 0 320 240" role="img" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- sanfter Hintergrund-Glow -->
+      <radialGradient id="glow" cx="50%" cy="45%" r="65%">
+        <stop offset="0%"  stop-color="rgba(16,185,129,0.20)"/>
+        <stop offset="70%" stop-color="rgba(163,230,53,0.20)"/>
+        <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+      </radialGradient>
+      <!-- Card-Gradient -->
+      <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%"  stop-color="rgba(255,255,255,1)"/>
+        <stop offset="100%" stop-color="rgba(248,250,248,1)"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Glow-Hintergrund -->
+    <ellipse cx="160" cy="120" rx="170" ry="110" fill="url(#glow)">
+      <animate attributeName="rx" values="160;170;160" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="100;110;100" dur="8s" repeatCount="indefinite" />
+    </ellipse>
+
+    <!-- Browser-Fenster -->
+    <g class="panel">
+      <!-- Fensterrahmen -->
+      <rect x="20" y="24" width="280" height="180" rx="14" fill="white" stroke="var(--line)" stroke-width="1.5" />
+      <rect x="20" y="24" width="280" height="34" rx="14" fill="var(--surface2)" />
+      <!-- Fenster-Buttons -->
+      <g transform="translate(32,41)">
+        <circle r="5" class="mint" />
+        <circle r="5" cx="16" class="lime" />
+        <circle r="5" cx="32" fill="#d1d5db" />
+      </g>
+
+      <!-- linke Sidebar -->
+      <rect x="32" y="70" width="60" height="120" rx="8" fill="var(--surface2)" />
+      <!-- Sidebar-Linien -->
+      <g stroke="var(--line)" stroke-width="2" stroke-linecap="round">
+        <line x1="42" y1="86" x2="82" y2="86" />
+        <line x1="42" y1="102" x2="82" y2="102" />
+        <line x1="42" y1="118" x2="82" y2="118" />
+        <line x1="42" y1="134" x2="82" y2="134" />
+        <line x1="42" y1="150" x2="82" y2="150" />
+      </g>
+
+      <!-- Hero-Bildfläche -->
+      <rect x="104" y="70" width="184" height="70" rx="10" fill="url(#card)" />
+      <!-- „Bild“-Welle -->
+      <path d="M108 118 C130 104, 150 126, 170 114 S210 120, 232 108 S265 120, 285 112"
+            fill="none" stroke="var(--accent1)" stroke-width="3" opacity="0.7">
+        <animate attributeName="d"
+          dur="4s" repeatCount="indefinite"
+          values="
+            M108 118 C130 104, 150 126, 170 114 S210 120, 232 108 S265 120, 285 112;
+            M108 116 C130 108, 150 122, 170 118 S210 116, 232 110 S265 116, 285 114;
+            M108 118 C130 104, 150 126, 170 114 S210 120, 232 108 S265 120, 285 112
+          " />
+      </path>
+
+      <!-- Headline-Zeile -->
+      <rect x="104" y="146" width="120" height="12" rx="6" class="mint" opacity="0.9">
+        <animate attributeName="width" values="110;140;110" dur="3.6s" repeatCount="indefinite" />
+      </rect>
+      <!-- Subline -->
+      <rect x="104" y="164" width="170" height="8" rx="4" class="line-soft" />
+      <rect x="104" y="178" width="150" height="8" rx="4" class="line-soft" />
+
+      <!-- CTA-Button -->
+      <g transform="translate(250,146)">
+        <rect width="38" height="18" rx="9" class="lime">
+          <animate attributeName="opacity" values="1;.85;1" dur="2.2s" repeatCount="indefinite" />
+        </rect>
+      </g>
+
+      <!-- kleine schwebende Cards -->
+      <g class="float">
+        <rect x="118" y="196" width="52" height="28" rx="8" fill="white" stroke="var(--line)" />
+        <rect x="176" y="196" width="44" height="28" rx="8" fill="white" stroke="var(--line)" />
+        <rect x="226" y="196" width="62" height="28" rx="8" fill="white" stroke="var(--line)" />
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0; 0 -3; 0 0" dur="5s" repeatCount="indefinite" />
+      </g>
+    </g>
+  </svg>
+</div>
       </div>
     </section>
 
@@ -116,7 +202,7 @@
 
   <div class="project-actions">
     <a
-      class="btn btn-primary"
+      class="btn btn-primary mt+5"
       href="https://andreasspiess.github.io/trainingsplan-app/"
       target="_blank"
       rel="noopener"
