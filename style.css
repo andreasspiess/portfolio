@@ -118,7 +118,9 @@ header{
 
 /* HERO GRID */
 .hero-grid{
-  display:grid;gap:36px;align-items:center;
+  display:grid;
+  gap:36px;
+  align-items:center;
 }
 @media(min-width:900px){
   .hero-grid{
@@ -176,7 +178,7 @@ header{
 /* ABOUT */
 .about p{
   max-width: 720px;
-  margin: 0 auto 1rem;
+/*  margin: 0 auto 1rem; */
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.7;
@@ -320,3 +322,31 @@ footer{
   font-size: 2rem;
   color: var(--muted);
 }
+
+/* Skills kompakt & zentriert */
+#skills.section { padding: 60px 0 40px; }
+#skills .container { text-align: center; }
+
+.skills-list{
+  display:flex;
+  gap:12px; flex-wrap:wrap; 
+  justify-content:center; 
+  align-items:center;
+  margin:0; padding:0; 
+  list-style:none;
+}
+.skills-list li{
+  display:inline-flex; 
+  align-items:center; 
+  gap:8px;
+  background:var(--surface2); 
+  padding:8px 14px; 
+  border-radius:999px; 
+  font-weight:500;
+}
+.skills-list img{ 
+  width:40px; 
+  height:40px; 
+  display:block;
+}
+
