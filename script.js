@@ -13,7 +13,6 @@ window.addEventListener('resize', () => {
   }
 });
 
-
 // Scroll Progress
 const progress = document.getElementById('progress');
 
@@ -30,7 +29,6 @@ function setProgress() {
 setProgress();
 window.addEventListener('scroll', setProgress);
 window.addEventListener('resize', setProgress);
-
 
 // Scroll Reveal
 const io = new IntersectionObserver(
